@@ -14,6 +14,8 @@ import android.widget.Button;
  */
 public class FragmentButton extends Fragment{
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Button button = new Button(this.getActivity());

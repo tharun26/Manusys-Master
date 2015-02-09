@@ -64,7 +64,7 @@ public class MainActivity extends MaterialNavigationDrawer {
 
         this.addSection(newSection("Sponsors",R.drawable.sponsors,new FragmentButton()).setSectionColor(Color.parseColor("#9c27b0")));
         this.addSection(newSection("Accomodation",R.drawable.ic_hotel_grey600_24dp,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
-        this.addSection(newSection("Contacts",R.drawable.contacts,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
+        this.addSection(newSection("Contacts",R.drawable.contacts,new FragmentContacts()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("About",R.drawable.about,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
 
         // create bottom section
