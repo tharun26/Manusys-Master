@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Manufacturing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Event Items -->
+    <string-array name="events">
+        <item>Secrets</item>
+        <item>Photo Competition</item>
+        <item>Robo Wars</item>
+        <item>Car Race</item>
+        <item>Auto Show</item>
+    </string-array>
+
+    <array name="events_images">
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+    </array>
+
+    <string name="title_activity_workshops">workshops</string>
+
+</resources>
