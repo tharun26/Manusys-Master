@@ -10,7 +10,7 @@
         android:src="@drawable/bamboo"/>
 
     <com.astuetz.PagerSlidingTabStrip
-        android:id="@+id/tabs"
+        android:id="@+id/tabs_event1"
         app:pstsShouldExpand="true"
         app:pstsTextAllCaps="true"
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
     </com.astuetz.PagerSlidingTabStrip>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+        android:id="@+id/viewpager_event1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white" />

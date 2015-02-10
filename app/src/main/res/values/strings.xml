@@ -24,5 +24,6 @@
     </array>
 
     <string name="title_activity_workshops">workshops</string>
+    <string name="title_activity_event1">Event1</string>
 
 </resources>

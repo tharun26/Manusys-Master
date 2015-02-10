@@ -142,8 +142,8 @@ public class FragmentIndex extends Fragment {
                         "Item in position " + position + " clicked",
                         Toast.LENGTH_LONG).show();
                */
-                //Intent intent1=new Intent(getActivity(),Event1Activity.class);
-                //startActivity(intent1);
+                Intent intent1=new Intent(getActivity(),Event1.class);
+                startActivity(intent1);
 
                 //  fragment = new HomeFragment();
                 break;

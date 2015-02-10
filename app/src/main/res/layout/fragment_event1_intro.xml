@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the fragment  to be displayed for a section associated with a tab -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event1_background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Introduction"
+
+        android:layout_marginTop="41dp"
+        android:textColor="#ff000000"
+        android:id="@+id/textView2"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/event1_intro"
+        android:text="Prior to Android  preview, the easiest way to setup tabs with Fragments was to use ActionBar Tabs as described in ActionBar Tabs with Fragments guide. However, all methods related to navigation modes in the ActionBar class (such as setNavigationMode(), addTab(), selectTab(), etc.) are now deprecated."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2" />
+</RelativeLayout>
