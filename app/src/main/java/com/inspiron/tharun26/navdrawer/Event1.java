@@ -1,28 +1,58 @@
 package com.inspiron.tharun26.navdrawer;
 
+import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.astuetz.PagerSlidingTabStrip;
 
+import java.util.ArrayList;
 
-public class Event1 extends ActionBarActivity {
+import se.emilsjolander.flipview.FlipView;
+import se.emilsjolander.flipview.OverFlipMode;
+
+
+public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Callback, FlipView.OnFlipListener, FlipView.OnOverFlipListener {
+
+    private FlipView mFlipView;
+    private FlipAdapterEvent1 mAdapter;
+
+    private String[] event_titles;
+    private TypedArray event_icons;
+    private ArrayList<EventInformation> eventInformations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event1);
-        // Get the ViewPager and set it's PagerAdapter so that it can display items
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager_event1);
-        viewPager.setAdapter(new Event1_Adapter(getSupportFragmentManager()));
+        event_titles = getResources().getStringArray(R.array.events_info);
+        event_icons = getResources().obtainTypedArray(R.array.events_info_images);
 
-        // Give the PagerSlidingTabStrip the ViewPager
-        PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs_event1);
-        // Attach the view pager to the tab strip
-        tabsStrip.setViewPager(viewPager);
+        eventInformations = new ArrayList<EventInformation>();
+
+        eventInformations.add(new EventInformation(event_titles[0], event_icons.getResourceId(0, -1)));
+        eventInformations.add(new EventInformation(event_titles[1], event_icons.getResourceId(1, -1)));
+        eventInformations.add(new EventInformation(event_titles[2], event_icons.getResourceId(2, -1)));
+        eventInformations.add(new EventInformation(event_titles[3], event_icons.getResourceId(3, -1)));
+        eventInformations.add(new EventInformation(event_titles[4], event_icons.getResourceId(4, -1)));
+
+        // Log.i("DEbug"," "+event_titles[0]+event_titles[1]+event_titles[2]+event_titles[3]+event_titles[4]);
+        event_icons.recycle();
+
+        mFlipView = (FlipView) findViewById(R.id.flip_view);
+        mAdapter = new FlipAdapterEvent1(this,eventInformations);
+        mAdapter.setCallback(this);
+        mFlipView.setAdapter(mAdapter);
+
+        mFlipView.setOnFlipListener(this);
+        mFlipView.peakNext(false);
+        mFlipView.setOverFlipMode(OverFlipMode.RUBBER_BAND);
+        mFlipView.setEmptyView(findViewById(R.id.empty_view));
+        mFlipView.setOnOverFlipListener(this);
     }
 
 
@@ -46,5 +76,26 @@ public class Event1 extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onPageRequested(int page) {
+        mFlipView.smoothFlipTo(page);
+    }
+
+    @Override
+    public void onFlippedToPage(FlipView flipView, int i, long l) {
+        Log.i("pageflip", "Page: " + i);
+        if (i>0) {
+
+            mFlipView.peakPrevious(false);
+        }
+
+        }
+
+    @Override
+    public void onOverFlip(FlipView flipView, OverFlipMode overFlipMode, boolean b, float v, float v2) {
+
+        Log.i("overflip", "overFlipDistance = "+v);
     }
 }
