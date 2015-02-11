@@ -1,5 +1,8 @@
 package com.inspiron.tharun26.navdrawer;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.BaseAdapter;
 
@@ -20,7 +23,7 @@ import java.util.List;
 /**
  * Created by tharun26 on 10/2/15.
  */
-public class FlipAdapterEvent1 extends BaseAdapter implements View.OnClickListener {
+public class FlipAdapterEvent1 extends BaseAdapter implements ImageView.OnClickListener {
 
     public interface Callback{
         public void onPageRequested(int page);
@@ -88,49 +91,37 @@ public class FlipAdapterEvent1 extends BaseAdapter implements View.OnClickListen
         else if(position==1 ) {
             LayoutInflater mInflater = (LayoutInflater)
                     context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.page_event_1, null);
-            ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
+            convertView = mInflater.inflate(R.layout.page_event1_rules, null);
+           /* ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
             TextView txtTitle = (TextView) convertView.findViewById(R.id.text_event_1);
             txtTitle.setText(eventInformation.get(position).getEvent_info_title());
-            imgIcon.setImageResource(eventInformation.get(position).getIcon());
+            imgIcon.setImageResource(eventInformation.get(position).getIcon());*/
         }
         else if(position==2 ) {
             LayoutInflater mInflater = (LayoutInflater)
                     context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.page_event_1, null);
-            ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
+            convertView = mInflater.inflate(R.layout.page_event1_venue, null);
+        ImageView event1_venue=(ImageView)convertView.findViewById(R.id.venue_event1);
+        event1_venue.setOnClickListener(this);
+         /*   ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
             TextView txtTitle = (TextView) convertView.findViewById(R.id.text_event_1);
             txtTitle.setText(eventInformation.get(position).getEvent_info_title());
             imgIcon.setImageResource(eventInformation.get(position).getIcon());
+            */
+
+
         }
         else if(position==3 ) {
             LayoutInflater mInflater = (LayoutInflater)
                     context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.page_event_1, null);
-            ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
+            convertView = mInflater.inflate(R.layout.page_event1_contact, null);
+        ImageView contact1_event_1=(ImageView)convertView.findViewById(R.id.contact1_event_1);
+        contact1_event_1.setOnClickListener(this);
+          /*  ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
             TextView txtTitle = (TextView) convertView.findViewById(R.id.text_event_1);
             txtTitle.setText(eventInformation.get(position).getEvent_info_title());
             imgIcon.setImageResource(eventInformation.get(position).getIcon());
-        }
-       else if(position==4) {
-            LayoutInflater mInflater = (LayoutInflater)
-                    context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.page_event_1, null);
-            ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
-            TextView txtTitle = (TextView) convertView.findViewById(R.id.text_event_1);
-            txtTitle.setText(eventInformation.get(position).getEvent_info_title());
-            imgIcon.setImageResource(eventInformation.get(position).getIcon());
-        }
-        else
-        {
-            LayoutInflater mInflater = (LayoutInflater)
-                    context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.page_event_contact, null);
-            ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
-            TextView txtTitle = (TextView) convertView.findViewById(R.id.text_event_1);
-            txtTitle.setText(eventInformation.get(position).getEvent_info_title());
-            imgIcon.setImageResource(eventInformation.get(position).getIcon());
-
+            */
         }
 
 
@@ -184,7 +175,22 @@ public class FlipAdapterEvent1 extends BaseAdapter implements View.OnClickListen
                     callback.onPageRequested(getCount()-1);
                 }
                 break;
+            case R.id.venue_event1:
+                double lat=13.0127,lng=80.2364;
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "Label which you want" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                context.startActivity(intent);
+                break;
+            case R.id.contact1_event_1:
+                Intent intent1 = new Intent(Intent.ACTION_DIAL);
+                intent1.setData(Uri.parse("tel:96771097994"));
+               context.startActivity(intent1);
+                break;
+
         }
+
     }
 
     /*

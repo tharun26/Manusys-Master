@@ -1,12 +1,16 @@
 package com.inspiron.tharun26.navdrawer;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.astuetz.PagerSlidingTabStrip;
 
@@ -38,7 +42,7 @@ public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Call
         eventInformations.add(new EventInformation(event_titles[1], event_icons.getResourceId(1, -1)));
         eventInformations.add(new EventInformation(event_titles[2], event_icons.getResourceId(2, -1)));
         eventInformations.add(new EventInformation(event_titles[3], event_icons.getResourceId(3, -1)));
-        eventInformations.add(new EventInformation(event_titles[4], event_icons.getResourceId(4, -1)));
+//        eventInformations.add(new EventInformation(event_titles[4], event_icons.getResourceId(4, -1)));
 
         // Log.i("DEbug"," "+event_titles[0]+event_titles[1]+event_titles[2]+event_titles[3]+event_titles[4]);
         event_icons.recycle();
@@ -53,6 +57,12 @@ public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Call
         mFlipView.setOverFlipMode(OverFlipMode.RUBBER_BAND);
         mFlipView.setEmptyView(findViewById(R.id.empty_view));
         mFlipView.setOnOverFlipListener(this);
+
+
+
+
+
+
     }
 
 
