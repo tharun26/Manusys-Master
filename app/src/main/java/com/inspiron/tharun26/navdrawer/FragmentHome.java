@@ -11,18 +11,34 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
+import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextSwitcher;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
+import android.widget.ViewSwitcher;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.flaviofaria.kenburnsview.Transition;
 
+import java.util.ArrayList;
+
+import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
+
 /**
  * Created by tharun26 on 11/2/15.
  */
-public class FragmentHome extends Fragment implements KenBurnsView.TransitionListener {
+//public class FragmentHome extends Fragment implements KenBurnsView.TransitionListener
+public class FragmentHome extends Fragment {
+
+    private FeatureCoverFlow mCoverFlow;
+    private CoverFlowAdapter mAdapter;
+    private ArrayList<GameEntity> mData = new ArrayList<>(0);
+    private TextSwitcher mTitle;
 
 
     LinearLayout imageGallery;
@@ -43,7 +59,7 @@ public class FragmentHome extends Fragment implements KenBurnsView.TransitionLis
         super.onActivityCreated(savedInstanceState);
 
         //ImageView demoImage = (ImageView) getActivity().findViewById(R.id.home_title);
-        int imagesToShow[] = { R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher,  R.drawable.ic_launcher};
+       // int imagesToShow[] = { R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher,  R.drawable.ic_launcher};
 
 
         //animate(demoImage, imagesToShow, 0,true);
@@ -55,6 +71,52 @@ public class FragmentHome extends Fragment implements KenBurnsView.TransitionLis
             imageGallery.addView(image);
         }
 */
+        mData.add(new GameEntity(R.drawable.bamboo, R.string.title1));
+        mData.add(new GameEntity(R.drawable.bamboo, R.string.title2));
+        mData.add(new GameEntity(R.drawable.bamboo, R.string.title3));
+        mData.add(new GameEntity(R.drawable.bamboo, R.string.title4));
+
+        mTitle = (TextSwitcher) getActivity().findViewById(R.id.title);
+        mTitle.setFactory(new ViewSwitcher.ViewFactory() {
+            @Override
+            public View makeView() {
+                LayoutInflater inflater = LayoutInflater.from(getActivity());
+                TextView textView = (TextView) inflater.inflate(R.layout.item_title, null);
+                return textView;
+            }
+        });
+        Animation in = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_in_top);
+        Animation out = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_out_bottom);
+        mTitle.setInAnimation(in);
+        mTitle.setOutAnimation(out);
+
+        mAdapter = new CoverFlowAdapter(getActivity());
+        mAdapter.setData(mData);
+        mCoverFlow = (FeatureCoverFlow) getActivity().findViewById(R.id.coverflow);
+        mCoverFlow.setAdapter(mAdapter);
+
+        mCoverFlow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(),
+                        getResources().getString(mData.get(position).titleResId),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mCoverFlow.setOnScrollPositionListener(new FeatureCoverFlow.OnScrollPositionListener() {
+            @Override
+            public void onScrolledToPosition(int position) {
+                mTitle.setText(getResources().getString(mData.get(position).titleResId));
+            }
+
+            @Override
+            public void onScrolling() {
+                mTitle.setText("");
+            }
+        });
+
+
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -116,8 +178,10 @@ public class FragmentHome extends Fragment implements KenBurnsView.TransitionLis
             }
         });
     }
-    @Override
-    public void onStart() {
+
+
+
+    /*public void onStart() {
         super.onStart();
         //TextView tv = (TextView)getActivity().findViewById(R.id.mywidget);
         // tv.setSelected(true);
@@ -159,4 +223,5 @@ public class FragmentHome extends Fragment implements KenBurnsView.TransitionLis
 
         context=activity.getBaseContext();
     }
+*/
  }

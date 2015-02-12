@@ -39,6 +39,11 @@
         <item>@drawable/bamboo</item>
     </array>
 
+    <string name="title1">God of War Ascension</string>
+    <string name="title2">Assassin\'s Creed III</string>
+    <string name="title3">Hitman Absolution</string>
+    <string name="title4">Dishonored</string>
+
     <string name="title_activity_workshops">workshops</string>
     <string name="title_activity_event1">Event1</string>
 
