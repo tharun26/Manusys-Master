@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewFlipper
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
+
+        android:paddingBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ceg" />
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blueprint" />
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/manufacturing" />
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover" />
+
+
+
+    </ViewFlipper>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Manusys'15"
+        android:background="@drawable/home_background_selector"
+        android:id="@+id/textView6"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+       android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="70dp"
+        android:textColor="#ff000000" />
+
+
+
+
+</RelativeLayout>

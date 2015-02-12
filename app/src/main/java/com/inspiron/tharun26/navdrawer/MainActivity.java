@@ -168,7 +168,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         //this.addAccount(account3);
 
         // create sections
-        this.addSection(newSection("Home",R.drawable.home ,new FragmentIndex()).setSectionColor(Color.parseColor("#9c27b0")));
+        this.addSection(newSection("Home",R.drawable.home ,new FragmentHome()).setSectionColor(Color.parseColor("#9c27b0")));
         this.addSection(newSection("Events",R.drawable.events,new FragmentIndex()).setSectionColor(Color.parseColor("#03a9f4")));
       //  this.addSection(newSection("Workshops",R.drawable.workshops,new FragmentIndex()).setSectionColor(Color.parseColor("#9c27b0")));
         this.addSection(newSection("Workshops",R.drawable.workshops,new Intent(this,workshops.class)));
