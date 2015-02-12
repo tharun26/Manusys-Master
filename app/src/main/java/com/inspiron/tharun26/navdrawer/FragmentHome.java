@@ -72,9 +72,9 @@ public class FragmentHome extends Fragment {
         }
 */
         mData.add(new GameEntity(R.drawable.bamboo, R.string.title1));
-        mData.add(new GameEntity(R.drawable.bamboo, R.string.title2));
-        mData.add(new GameEntity(R.drawable.bamboo, R.string.title3));
-        mData.add(new GameEntity(R.drawable.bamboo, R.string.title4));
+        mData.add(new GameEntity(R.drawable.manufacturing, R.string.title2));
+        mData.add(new GameEntity(R.drawable.ceg, R.string.title3));
+        mData.add(new GameEntity(R.drawable.cover, R.string.title4));
 
         mTitle = (TextSwitcher) getActivity().findViewById(R.id.title);
         mTitle.setFactory(new ViewSwitcher.ViewFactory() {
