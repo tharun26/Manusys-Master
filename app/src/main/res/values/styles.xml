@@ -8,4 +8,10 @@
         <item name="colorAccent">#FFFFFF</item>
     </style>
 
+    <style name="MyTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
 </resources>
