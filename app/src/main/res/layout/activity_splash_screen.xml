@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/manu1"
     >
+
+
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -14,10 +18,11 @@
         android:src="@drawable/manusys_logo_color"
         android:cropToPadding="true"
         app:border_width="2dp"
-        app:border_color="#FF000000"
+        app:border_color="#dfca9700"
 
 
         android:layout_centerInParent="true"
+        android:alpha=".8"
         />
 
     <TextView
