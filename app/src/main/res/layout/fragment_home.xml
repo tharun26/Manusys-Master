@@ -249,10 +249,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to the worlrld of gearsWelcome to the world of gearsWelcome to the world of gearsWelcome to the world of gearsWelcome to the world of gearsWelcome to the world of gears"
+        android:text="Manusys 2015, It is time to make your dreams come true . A place to learn more than what u expect. "
         android:textColor="#ff000000"
         android:textSize="15dp"
-        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:textStyle="italic"
         />
 </RelativeLayout>
 </RelativeLayout>

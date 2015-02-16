@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the fragment  to be displayed for a section associated with a tab -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about1">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ceg"
+        android:id="@+id/imageView3" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about2"
+        android:layout_below="@+id/about1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_background_selector">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEG"
+            android:textColor="#ff000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about3"
+        android:layout_below="@+id/about2"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/home_background_selector">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEG It is time to make your dreams come true . A place to learn more than what u expect. "
+            android:textColor="#ff000000"
+            android:textSize="15dp"
+            android:paddingLeft="15dp"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/about_title"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+</RelativeLayout>
