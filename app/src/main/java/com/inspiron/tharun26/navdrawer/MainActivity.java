@@ -2,11 +2,15 @@ package com.inspiron.tharun26.navdrawer;
 
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
@@ -25,11 +30,165 @@ import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
 import it.neokree.materialnavigationdrawer.elements.MaterialAccount;
 
 
+
+import com.google.android.gcm.GCMRegistrar;
+//import com.inspiron.tharun26.navdrawer.NavDrawerListAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+import static com.inspiron.tharun26.navdrawer.CommonUtilities.DISPLAY_MESSAGE_ACTION;
+import static com.inspiron.tharun26.navdrawer.CommonUtilities.SENDER_ID;
+import static com.inspiron.tharun26.navdrawer.CommonUtilities.EXTRA_MESSAGE;
+
 public class MainActivity extends MaterialNavigationDrawer {
+
+    BroadcastReceiver mHandleMessageReceiver = null;
+    ConnectionDetector cd;
+    public static String name;
+    public static String email;
+    AsyncTask<Void, Void, Void> mRegisterTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        cd = new ConnectionDetector(getApplicationContext());
+        // Check if Internet present
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_LONG).show();
+            // stop executing code by return
+            //  return;
+        }
+
+        name = "ManusysID";
+        email = "ManusysEmail";
+
+        // Make sure the device has the proper dependencies.
+        GCMRegistrar.checkDevice(this);
+
+        // Make sure the manifest was properly set - comment out this line
+        // while developing the app, then uncomment it when it's ready.
+        GCMRegistrar.checkManifest(this);
+
+
+        registerReceiver(mHandleMessageReceiver, new IntentFilter(
+                DISPLAY_MESSAGE_ACTION));
+
+        // Get GCM registration id
+        final String regId = GCMRegistrar.getRegistrationId(this);
+
+        // Check if regid already presents
+        if (regId.equals("")) {
+            // Registration is not present, register now with GCM
+            GCMRegistrar.register(this, SENDER_ID);
+        } else {
+            // Device is already registered on GCM
+            if (GCMRegistrar.isRegisteredOnServer(this)) {
+                // Skips registration.
+                Toast.makeText(getApplicationContext(), "Already registered with GCM", Toast.LENGTH_LONG).show();
+            } else {
+                // Try to register again, but not in the UI thread.
+                // It's also necessary to cancel the thread onDestroy(),
+                // hence the use of AsyncTask instead of a raw thread.
+                final Context context = this;
+                mRegisterTask = new AsyncTask<Void, Void, Void>() {
+
+                    @Override
+                    protected Void doInBackground(Void... params) {
+                        // Register on our server
+                        // On server creates a new user
+                        ServerUtilities.register(context, name, email, regId);
+                        return null;
+                    }
+
+                    @Override
+                    protected void onPostExecute(Void result) {
+                        mRegisterTask = null;
+                    }
+
+                };
+                mRegisterTask.execute(null, null, null);
+            }
+        }
+
+        mHandleMessageReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                String newMessage = intent.getExtras().getString(EXTRA_MESSAGE);
+                // Waking up mobile if it is sleeping
+                WakeLocker.acquire(getApplicationContext());
+
+/*
+                DatabaseHandler db = new DatabaseHandler(getApplicationContext());
+                Log.d("Insert: ", "Inserting ..");
+                db.addNotification(new NotificationDb(newMessage));
+                Log.d("Reading: ", "Reading all contacts..");
+                List<NotificationDb> notificationDbs = db.getAllContacts();
+
+                int i=0;
+                for (NotificationDb cn : notificationDbs) {
+                  //      db.deleteContact(cn);
+                   String log = "Id: "+cn.getId()+" ,Name: " + cn.getNotification()  ;
+                    //  Writing Contacts to log
+                    Log.d("Name: ", log);
+                }
+*/
+
+
+
+                /**
+                 * Take appropriate action on this message
+                 * depending upon yrour app requirement
+                 * For now i am just displaying it on the screen
+                 * */
+
+                // Showing received message
+                // lblMessage.append(newMessage + "\n");
+                Toast.makeText(getApplicationContext(), "New Message: " + newMessage, Toast.LENGTH_SHORT).show();
+
+
+                // TextView tv = (TextView)findViewById(R.id.mywidget);
+                //tv.append("                                        "+newMessage);
+
+
+
+
+            /*
+                int size=NotificationFragment.notification_title.length;
+                if(newMessage!="")
+                {
+                    NotificationFragment.notification_title[size+1]="Message";
+
+                }
+             */
+                //
+                //   NotificationFragment.notification_title[20]=newMessage;
+
+
+                // Releasing wake lock
+                WakeLocker.release();
+            }
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         final ImageView fabIconNew = new ImageView(this);
         fabIconNew.setImageDrawable(getResources().getDrawable(R.drawable.swatches));
@@ -178,11 +337,26 @@ public class MainActivity extends MaterialNavigationDrawer {
         this.addSection(newSection("Sponsors",R.drawable.sponsors,new FragmentButton()).setSectionColor(Color.parseColor("#9c27b0")));
         this.addSection(newSection("Accomodation",R.drawable.ic_hotel_grey600_24dp,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Contacts",R.drawable.contacts,new FragmentContacts()).setSectionColor(Color.parseColor("#03a9f4")));
+        this.addSection(newSection("Updates",R.drawable.updates ,new NotificationFragment()).setSectionColor(Color.parseColor("#008744")));
+
         this.addSection(newSection("About",R.drawable.about,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
 
         // create bottom section
         this.addBottomSection(newSection("Bottom Section",R.drawable.ic_settings_black_24dp,new Intent(this,Settings.class)));
 
+
+    }
+    protected void onDestroy(){
+        super.onDestroy();
+        if (mRegisterTask != null) {
+            mRegisterTask.cancel(true);
+        }
+        try {
+            unregisterReceiver(mHandleMessageReceiver);
+            GCMRegistrar.onDestroy(this);
+        } catch (Exception e) {
+            Log.e("UnRegister Receiver Error", "> " + e.getMessage());
+        }
 
     }
 }
