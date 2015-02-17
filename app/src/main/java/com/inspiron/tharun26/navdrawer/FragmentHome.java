@@ -130,6 +130,7 @@ public class FragmentHome extends Fragment {
 
         return rootView;
     }
+    /*
     private void animate(final ImageView imageView, final int images[], final int imageIndex, final boolean forever) {
 
         //imageView <-- The View which displays the images
@@ -178,7 +179,7 @@ public class FragmentHome extends Fragment {
             }
         });
     }
-
+*/
 
 
     /*public void onStart() {

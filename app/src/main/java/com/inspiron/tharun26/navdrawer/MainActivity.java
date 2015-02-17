@@ -58,7 +58,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         // Check if Internet present
         if (!cd.isConnectingToInternet()) {
             // Internet Connection is not present
-            Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_LONG).show();
+          //  Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_LONG).show();
             // stop executing code by return
             //  return;
         }
@@ -88,7 +88,7 @@ public class MainActivity extends MaterialNavigationDrawer {
             // Device is already registered on GCM
             if (GCMRegistrar.isRegisteredOnServer(this)) {
                 // Skips registration.
-                Toast.makeText(getApplicationContext(), "Already registered with GCM", Toast.LENGTH_LONG).show();
+            //    Toast.makeText(getApplicationContext(), "Already registered with GCM", Toast.LENGTH_LONG).show();
             } else {
                 // Try to register again, but not in the UI thread.
                 // It's also necessary to cancel the thread onDestroy(),
@@ -172,20 +172,6 @@ public class MainActivity extends MaterialNavigationDrawer {
                 WakeLocker.release();
             }
         };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -359,4 +345,6 @@ public class MainActivity extends MaterialNavigationDrawer {
         }
 
     }
+
+
 }
