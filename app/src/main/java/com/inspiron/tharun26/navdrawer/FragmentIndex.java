@@ -60,6 +60,13 @@ public class FragmentIndex extends Fragment {
         event_Items.add(new EventItem(event_titles[3],  event_icons.getResourceId(3, -1)));
         // Pages
         event_Items.add(new EventItem(event_titles[4],  event_icons.getResourceId(4, -1)));
+
+        event_Items.add(new EventItem(event_titles[4],  event_icons.getResourceId(4, -1)));
+        event_Items.add(new EventItem(event_titles[5],  event_icons.getResourceId(5, -1)));
+        event_Items.add(new EventItem(event_titles[6],  event_icons.getResourceId(6, -1)));
+        event_Items.add(new EventItem(event_titles[7],  event_icons.getResourceId(7, -1)));
+        event_Items.add(new EventItem(event_titles[8],  event_icons.getResourceId(8, -1)));
+        event_Items.add(new EventItem(event_titles[9],  event_icons.getResourceId(9, -1)));
         // What's hot, We  will add a counter here
       /*
         event_Items.add(new EventItem(event_titles[5],  event_icons.getResourceId(5, -1)));
@@ -148,20 +155,63 @@ public class FragmentIndex extends Fragment {
                 //  fragment = new HomeFragment();
                 break;
             case 1:
+                Intent intent2=new Intent(getActivity(),Event2.class);
+                startActivity(intent2);
+
                 //  fragment = new EventsFragment();
+
                 break;
             case 2:
+                Intent intent3=new Intent(getActivity(),Event3.class);
+                startActivity(intent3);
                 //     fragment = new PhotosFragment();
                 break;
             case 3:
+                Intent intent4=new Intent(getActivity(),Event4.class);
+                startActivity(intent4);
                 //     fragment = new CommunityFragment();
                 break;
             case 4:
+                Intent intent5=new Intent(getActivity(),Event5.class);
+                startActivity(intent5);
                 //     fragment = new PagesFragment();
                 break;
             case 5:
+                Intent intent6=new Intent(getActivity(),Event6.class);
+                startActivity(intent6);
                 //     fragment = new WhatsHotFragment();
                 break;
+            case 6:
+                Intent intent7=new Intent(getActivity(),Event7.class);
+                startActivity(intent7);
+                //     fragment = new WhatsHotFragment();
+                break;
+            case 7:
+                Intent intent8=new Intent(getActivity(),Event8.class);
+                startActivity(intent8);
+                //     fragment = new WhatsHotFragment();
+                break;
+            case 8:
+                Intent intent9=new Intent(getActivity(),Event9.class);
+                startActivity(intent9);
+                //     fragment = new WhatsHotFragment();
+                break;
+            case 9:
+                Intent intent10=new Intent(getActivity(),Event10.class);
+                startActivity(intent10);
+                //     fragment = new WhatsHotFragment();
+                break;
+            case 10:
+                Intent intent11=new Intent(getActivity(),Event11.class);
+                startActivity(intent11);
+                //     fragment = new WhatsHotFragment();
+                break;
+            case 11:
+              //  Intent intent12=new Intent(getActivity(),Event12.class);
+              //  startActivity(intent12);
+                //     fragment = new WhatsHotFragment();
+                break;
+
 
             default:
                 break;

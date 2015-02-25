@@ -13,9 +13,29 @@
         <item>Robo Wars</item>
         <item>Car Race</item>
         <item>Auto Show</item>
+        <item>Secrets</item>
+        <item>Photo Competition</item>
+        <item>Robo Wars</item>
+        <item>Car Race</item>
+        <item>Auto Show</item>
+        <item>Secrets</item>
+        <item>Photo Competition</item>
+        <item>Robo Wars</item>
+        <item>Car Race</item>
+        <item>Auto Show</item>
     </string-array>
 
     <array name="events_images">
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
@@ -65,7 +85,16 @@
     <string name="options_unregister">Unregister</string>
     <string name="options_clear">Clear</string>
     <string name="options_exit">Exit</string>
-
     <string name="title_activity_about">About</string>
+    <string name="title_activity_event2">Event2</string>
+    <string name="title_activity_event3">Event3</string>
+    <string name="title_activity_event4">Event4</string>
+    <string name="title_activity_event5">Event5</string>
+    <string name="title_activity_event6">Event6</string>
+    <string name="title_activity_event7">Event7</string>
+    <string name="title_activity_event8">Event8</string>
+    <string name="title_activity_event9">Event9</string>
+    <string name="title_activity_event10">Event10</string>
+    <string name="title_activity_event11">Event11</string>
 
 </resources>

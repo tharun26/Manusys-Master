@@ -82,7 +82,47 @@
         <activity
             android:name=".about"
             android:label="@string/title_activity_about"
-            android:theme="@style/KitkatStatusBar">
+            android:theme="@style/KitkatStatusBar" >
+        </activity>
+        <activity
+            android:name=".Event2"
+            android:label="@string/title_activity_event2" >
+        </activity>
+        <activity
+            android:name=".Event3"
+            android:label="@string/title_activity_event3" >
+        </activity>
+        <activity
+            android:name=".Event4"
+            android:label="@string/title_activity_event4" >
+        </activity>
+        <activity
+            android:name=".Event5"
+            android:label="@string/title_activity_event5" >
+        </activity>
+        <activity
+            android:name=".Event6"
+            android:label="@string/title_activity_event6" >
+        </activity>
+        <activity
+            android:name=".Event7"
+            android:label="@string/title_activity_event7" >
+        </activity>
+        <activity
+            android:name=".Event8"
+            android:label="@string/title_activity_event8" >
+        </activity>
+        <activity
+            android:name=".Event9"
+            android:label="@string/title_activity_event9" >
+        </activity>
+        <activity
+            android:name=".Event10"
+            android:label="@string/title_activity_event10" >
+        </activity>
+        <activity
+            android:name=".Event11"
+            android:label="@string/title_activity_event11" >
         </activity>
     </application>
 
