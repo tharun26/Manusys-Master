@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class AboutFragmentPageAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "CEG", "Manufacturing", "Developer" };
+    private String tabTitles[] = new String[] { "CEG", "DoME", "Developer" };
 
     public AboutFragmentPageAdapter(FragmentManager fm) {
         super(fm);

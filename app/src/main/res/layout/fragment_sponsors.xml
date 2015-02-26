@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Accommodation will be available within the college campus. Per day rent is rupees 100/- only. Participants should take care of their food on their own. Participants are fully responsible for their belongings, Manusys at any cost will not bear any responsiblity . Participants are requested not to damage any property or indulge in any wrong practices during the stay. "
+        android:background="@drawable/home_background_selector"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     android:id="@+id/top">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,11 +34,11 @@
         android:layout_below="@+id/about1"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/home_background_selector">
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CEG"
+            android:text=""
             android:textColor="#ff000000"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -43,11 +51,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/about3"
         android:layout_below="@+id/about2"
-        android:paddingLeft="15dp"
+        android:paddingLeft="5dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingRight="15dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/home_background_selector">
 
@@ -55,16 +63,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CEG It is time to make your dreams come true . A place to learn more than what u expect. "
+            android:text="CEG Standing  tall on Sardar Patel Road, College of Engineering, Guindy (CEG), Anna University holds together a rich history of over 200 golden years.The rhapsodic red walls panning beautifully across acres of land, utter in silence the motto “Labor Omnia Vincit”, which means “Work conquers everything”. This abode of education has been tireless in its efforts to remain a benchmark for excellence in research  and  technical education.Being the  first  institution in Asia to commence postgraduate  programs, CEG has made vast progress since its inception,to become one of the most reputed institutions of the country. "
             android:textColor="#ff000000"
             android:textSize="15dp"
-            android:paddingLeft="15dp"
+            android:paddingLeft="5dp"
             android:textStyle="italic"
             />
         </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
     <TextView
         android:id="@+id/about_title"
-        android:text=""
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center" />

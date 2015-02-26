@@ -189,7 +189,7 @@ public class MainActivity extends MaterialNavigationDrawer {
        // ImageView rlIcon4 = new ImageView(this);
 
 
-        rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.whatsapp));
+        rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.gmail));
         rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.fb));
         rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.chrome));
         //rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher));
@@ -217,12 +217,14 @@ public class MainActivity extends MaterialNavigationDrawer {
                 rlIcon1.setOnClickListener(new ImageView.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        Log.d("Debug", "floating1");
-                        Uri uri = Uri.parse("smsto:" +"9677109794");
-                        Intent i = new Intent(Intent.ACTION_SENDTO, uri);
-                        i.setPackage("com.whatsapp");
-                        startActivity(Intent.createChooser(i, ""));
+                        Intent gmail = new Intent(Intent.ACTION_VIEW);
+                        gmail.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                        gmail.putExtra(Intent.EXTRA_EMAIL, new String[]{"manusys15@gmail.com"});
+                        //  gmail.setData(Uri.parse("tharun26@gmail.com"));
+                        gmail.putExtra(Intent.EXTRA_SUBJECT, "Query");
+                        gmail.setType("plain/text");
+                        gmail.putExtra(Intent.EXTRA_TEXT, "Hi,");
+                        startActivity(gmail);
 
                     }
                 });
@@ -231,20 +233,13 @@ public class MainActivity extends MaterialNavigationDrawer {
                     @Override
                     public void onClick(View v) {
 
-                        final String urlFb = "fb://page/"+"9gag";
-                        Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse(urlFb));
 
-                        // If a Facebook app is installed, use it. Otherwise, launch
-                        // a browser
-                        final PackageManager packageManager = getPackageManager();
-                        List<ResolveInfo> list =
-                                packageManager.queryIntentActivities(intent,
-                                        PackageManager.MATCH_DEFAULT_ONLY);
-                        if (list.size() == 0) {
-                            final String urlBrowser = "https://www.facebook.com/pages/"+"9gag";
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+
+
+                            final String urlBrowser = "https://www.facebook.com/manusys.in";
                             intent.setData(Uri.parse(urlBrowser));
-                        }
+
 
                         startActivity(intent);
 
@@ -255,7 +250,7 @@ public class MainActivity extends MaterialNavigationDrawer {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                        final String urlBrowser = "https://www.google.com";
+                        final String urlBrowser = "http://www.manusys.in";
                         intent.setData(Uri.parse(urlBrowser));
                         startActivity(intent);
 
@@ -321,7 +316,7 @@ public class MainActivity extends MaterialNavigationDrawer {
 
 
 
-        this.addSection( newSection("Accomodation",R.drawable.ic_hotel_grey600_24dp,new FragmentButton()).setSectionColor(Color.parseColor("#9c27b0")));
+        this.addSection( newSection("Accommodation",R.drawable.ic_hotel_grey600_24dp,new FragmentSponsors()).setSectionColor(Color.parseColor("#9c27b0")));
         this.addSection(newSection("Sponsors",R.drawable.sponsors,new FragmentAccomodation()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Contacts",R.drawable.contacts,new FragmentContacts()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Updates",R.drawable.updates ,new NotificationFragment()).setSectionColor(Color.parseColor("#008744")));

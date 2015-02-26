@@ -254,7 +254,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Manusys 2015, It is time to make your dreams come true . A place to learn more than what u expect. "
+android:text="As the signature event of the Association of Manufacturing Engineers, Manusys marks the confluence of students belonging to various disciplines. It is the annual symposium comprising of three granddays of events, exhibitions, workshops, guest lectures, paper presentations and several other interesting slots in the agenda that provide a unique platform for students to exhibit their talent and creativity.
+"
         android:textColor="#ff000000"
         android:textSize="15dp"
         android:paddingLeft="15dp"
