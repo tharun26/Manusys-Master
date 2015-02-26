@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/sold"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -51,10 +51,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+android:text="Have you ever dreamt of having your own IPL team? Manusys 15 provides you with a chance of forming your dream team. Enter the auction room. Bid for your favourite players. Form your winning combination.
+\nEvent Format
+\n1. The event will have two rounds.
+\n2. The first round will be a pen and paper round.
+\n3. The second round will be a typical IPL auction."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 

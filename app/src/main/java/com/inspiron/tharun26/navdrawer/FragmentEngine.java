@@ -43,13 +43,30 @@ public class FragmentEngine extends Fragment{
             public void onClick(View v) {
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:9677109794"));
+                intent.setData(Uri.parse("tel:7598346156"));
                 startActivity(intent);
 
 
             }
         });
+
+        ImageButton gmail=(ImageButton)getActivity().findViewById(R.id.enginemail);
+        gmail.setOnClickListener(new ImageView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent gmail = new Intent(Intent.ACTION_VIEW);
+                gmail.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                gmail.putExtra(Intent.EXTRA_EMAIL, new String[]{"engineworkshop@gmail.com"});
+              //  gmail.setData(Uri.parse("tharun26@gmail.com"));
+                gmail.putExtra(Intent.EXTRA_SUBJECT, "Query");
+                gmail.setType("plain/text");
+                gmail.putExtra(Intent.EXTRA_TEXT, "Hi,");
+                startActivity(gmail);
+            }
+        });
     }
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

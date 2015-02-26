@@ -21,7 +21,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/ceg"
+                    android:src="@drawable/hybrid"
                     android:id="@+id/imageView3" />
 
             </RelativeLayout>
@@ -61,7 +61,22 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/engine"
+                    android:text="Have you ever wondered what the future holds in the field of automotive engineering? Vehicles running on alternative energy! Seems interesting, isn't it? Fossil fuels are diminishing rapidly. The solution to this crucial issue is to resort to newer technologies like hybrid vehicles. Enlighten yourself in the field of hybrid technology by registering in this hybrid vehicles workshop. Limited seats only!
+\n\nRules and regulations
+\nEligibility Criterion:
+Only Students having valid IDs from any recognized educational institutions are allowed to attend this workshop.
+\n\nType of Participation:
+Only Individual registration. They can be from any discipline.
+\n\nSessions:
+Two sessions
+\n\nPre-requisites:
+We don’t demand anything other than your love for Automobile and the passion to learn about future vehicles
+\n\nPayment Details:
+Registration fee for the workshop is INR 800/- per head.
+\n\nCertificate Criteria:
+Participant must attend all the sessions to receive the certificate of participation. Failing to do so, participant’s registration will be cancelled.
+\n\nFor accommodations please visit accommodation tab. Participants should take care of their food on their own.
+\nFor recent updates and information check our website and your e-mail."
                     android:textColor="#ff000000"
                     android:textSize="15dp"
                     android:paddingLeft="15dp"
@@ -100,7 +115,7 @@
                     android:paddingTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mr.Gokul  8056097997"
+                    android:text="Abusalaman  9489588712"
                     android:paddingLeft="15dp"
                     android:textColor="#ff000000"
                     android:textSize="17sp"
@@ -120,6 +135,15 @@
                     android:layout_marginEnd="56dp"
                     android:paddingBottom="5dp"/>
 
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmail"
+                    android:background="@null"
+                    android:id="@+id/hybridmail"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true" />
 
             </RelativeLayout>
 

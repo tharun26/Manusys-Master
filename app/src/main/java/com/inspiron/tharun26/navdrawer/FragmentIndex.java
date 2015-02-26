@@ -61,12 +61,12 @@ public class FragmentIndex extends Fragment {
         // Pages
         event_Items.add(new EventItem(event_titles[4],  event_icons.getResourceId(4, -1)));
 
-        event_Items.add(new EventItem(event_titles[4],  event_icons.getResourceId(4, -1)));
         event_Items.add(new EventItem(event_titles[5],  event_icons.getResourceId(5, -1)));
         event_Items.add(new EventItem(event_titles[6],  event_icons.getResourceId(6, -1)));
         event_Items.add(new EventItem(event_titles[7],  event_icons.getResourceId(7, -1)));
         event_Items.add(new EventItem(event_titles[8],  event_icons.getResourceId(8, -1)));
         event_Items.add(new EventItem(event_titles[9],  event_icons.getResourceId(9, -1)));
+        event_Items.add(new EventItem(event_titles[10],  event_icons.getResourceId(10, -1)));
         // What's hot, We  will add a counter here
       /*
         event_Items.add(new EventItem(event_titles[5],  event_icons.getResourceId(5, -1)));

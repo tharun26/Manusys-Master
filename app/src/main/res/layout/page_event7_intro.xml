@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/quiz"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

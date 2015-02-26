@@ -176,7 +176,7 @@ public class FlipAdapterEvent9 extends BaseAdapter implements ImageView.OnClickL
                 }
                 break;
             case R.id.venue_event9:
-                double lat=13.0127,lng=80.2364;
+                double lat=13.011859,lng=80.234472;
                 String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "Label which you want" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
 

@@ -36,6 +36,21 @@ public class FragmentBluebot extends Fragment{
 
             }
         });
+        ImageButton gmail=(ImageButton)getActivity().findViewById(R.id.bluebotmail);
+        gmail.setOnClickListener(new ImageView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent gmail = new Intent(Intent.ACTION_VIEW);
+                gmail.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                gmail.putExtra(Intent.EXTRA_EMAIL, new String[]{"bluetoothrobotics@gmail.com"});
+                //gmail.setData(Uri.parse("tharun26@gmail.com"));
+                gmail.putExtra(Intent.EXTRA_SUBJECT, "Query");
+                gmail.setType("plain/text");
+                gmail.putExtra(Intent.EXTRA_TEXT, "Hi,");
+                startActivity(gmail);
+            }
+        });
     }
     public static FragmentBluebot newInstance(int page) {
         Bundle args = new Bundle();

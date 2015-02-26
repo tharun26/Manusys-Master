@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/camera"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -51,10 +51,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="Take your Cameras out! Doesn’t matter if it’s a DSLR, your smartphone or your old Nokia phone! Just capture that perfect pic! This time ‘round the theme is “Just ‘bout anything”. Yes. You read that right. It can be a picture of anything in the whole wide world. Just make sure the picture is visible!
+Exciting prizes to be won! So Hurry up! The last date for submission of the photos will be 13th March 2015."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 

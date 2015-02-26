@@ -176,7 +176,7 @@ public class FlipAdapterEvent1 extends BaseAdapter implements ImageView.OnClickL
                 }
                 break;
             case R.id.venue_event1:
-                double lat=13.0127,lng=80.2364;
+                double lat=13.011859,lng=80.234472;
                 String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "Label which you want" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
 
@@ -185,7 +185,7 @@ public class FlipAdapterEvent1 extends BaseAdapter implements ImageView.OnClickL
                 break;
             case R.id.contact1_event_1:
                 Intent intent1 = new Intent(Intent.ACTION_DIAL);
-                intent1.setData(Uri.parse("tel:96771097994"));
+                intent1.setData(Uri.parse("tel:8344442911"));
                context.startActivity(intent1);
                 break;
 

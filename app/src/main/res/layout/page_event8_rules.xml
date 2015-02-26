@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/rules"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -51,10 +51,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+android:text="1.Each team can consist of a maximum of three members.
+\n2. Each participant should have a Manusys ID.
+\n3. Decisions taken by the judges will be final."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 

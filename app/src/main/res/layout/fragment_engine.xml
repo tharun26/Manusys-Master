@@ -21,7 +21,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/ceg"
+            android:src="@drawable/engine"
             android:id="@+id/imageView3" />
 
     </RelativeLayout>
@@ -61,10 +61,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/engine"
+            android:text="Introduction
+\nThe automobile engine will come, and then I will consider my life's work complete\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t – Rudolf Diesel
+\nInterested to know the working of an engine, the heart of every automobile in the world?
+\nFascinated by the parts that make up the whole?
+\nThen this is the workshop for you! This one day workshop organised by Manusys’15 in association with Simpson and Company Ltd. will not only teach you the making and working of an engine but it also gives you the opportunity of seeing one come to life.
+\n
+\nFormat
+\nSession 1:
+\nRegistered participants will be taken on an industrial visit to Simpson  Co. Ltd., where they can see first-hand the assembly of an engine.
+\n
+Session 2:
+\nA theory session will be conducted by experts from Simpsons that explains in further detail the parts, working and various manufacturing processes involved.
+\nCertificates will be provided to the participants only if he/she attends all the sessions. Failing to do so, the participant's registration will stand cancelled and he/she will also have to forfeit the registration fee.
+\n\nRULES AND REGULATIONS
+\n•	Eligibility-all college students are welcome; a valid Manusys id is a must
+\n•	Individual participation only
+\n•	Payment- 1250/- per participant
+\n•	Every one must wear shoes.
+\nFor accommodations please visit accommodation tab. Participants should take care of their food on their own.
+\nFor recent updates and information check our website and your e-mail."
             android:textColor="#ff000000"
             android:textSize="15dp"
-            android:paddingLeft="15dp"
+            android:paddingLeft="5dp"
             android:textStyle="italic"
             />
     </RelativeLayout>
@@ -100,7 +119,7 @@
                 android:paddingTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mr.Gokul  8056097997"
+                android:text="Rajkumar-7598346156"
                 android:paddingLeft="15dp"
                 android:textColor="#ff000000"
                 android:textSize="17sp"
@@ -120,6 +139,15 @@
                 android:layout_marginEnd="56dp" />
             android:paddingBottom="5dp"
 
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/gmail"
+                 android:background="@null"
+                    android:id="@+id/enginemail"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true" />
             </RelativeLayout>
 
 

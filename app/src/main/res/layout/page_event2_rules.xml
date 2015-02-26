@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/rules"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -32,6 +32,11 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_2">
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -51,13 +56,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="1.Each team can have 4-6 members.\n2.The team should submit a TDP (Team Description Paper) containing all steps with sequence and the energy conversions by sending an e-mail to the address provided.
+\n3.The team must bring 3 hard copies of their abstract to the event.
+\n4.The team should report 5 hours prior the event, since the setup time is 5 hours.
+\n5.Use of explosives or any sharp, harmful materials is not encouraged.
+\n6.Area provided for contraptions will be 10ft*8ft.
+\n7.Maximum duration of contraptions is 25 minutes. If it crosses 25 minutes, the team shall be disqualified.
+\n8.The team may have to explain the working of their contraptions on being asked.
+\n9.A maximum of 2 trials will be allowed.
+\n10.In each trial, maximum allowable interventions will be 3. More than 3 interventions will lead to failure of the trial. A second trial will be given if the number of interventions exceeds 3. If the team is not satisfied with their first trial, it is their wish to do the second trial.
+\n11.Maximum reset time for second trial will be 30 minutes.
+\n12.If the second trial also fails, the better of the two trials will be considered for the evaluation.
+\n13.Judge’s decision will be final."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

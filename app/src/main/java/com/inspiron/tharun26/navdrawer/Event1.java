@@ -26,7 +26,7 @@ public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Call
     private FlipAdapterEvent1 mAdapter;
 
     private String[] event_titles;
-    private TypedArray event_icons;
+    private TypedArray event_icons,intro1;
     private ArrayList<EventInformation> eventInformations;
 
     @Override
@@ -35,6 +35,8 @@ public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Call
         setContentView(R.layout.activity_event1);
         event_titles = getResources().getStringArray(R.array.events_info);
         event_icons = getResources().obtainTypedArray(R.array.events_info_images);
+
+      //  intro1 = getResources().obtainTypedArray(R.array.events_intro);
 
         eventInformations = new ArrayList<EventInformation>();
 
@@ -46,6 +48,7 @@ public class Event1 extends ActionBarActivity  implements FlipAdapterEvent1.Call
 
         // Log.i("DEbug"," "+event_titles[0]+event_titles[1]+event_titles[2]+event_titles[3]+event_titles[4]);
         event_icons.recycle();
+       // intro1.recycle();
 
         mFlipView = (FlipView) findViewById(R.id.flip_view);
         mAdapter = new FlipAdapterEvent1(this,eventInformations);

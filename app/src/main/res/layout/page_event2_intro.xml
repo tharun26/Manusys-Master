@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/rover"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -32,7 +32,10 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_2">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -51,13 +54,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="Hit the Bulls Eye and prove to the world that you are the Arjuna of this generation.\n\n PROBLEM STATEMENT:-\n\t\t\tHit the target with an arrow or a dart, which is to be projected by a module.The Schematic of the module is available in www.manusys.in\n\nFINAL MODULE SPECIFICATIONS:-\n\t\t\t
+The distance between the projector module and the target must be at-least 50cm.\nThe target should comprise of three concentric circles i.e. circle C1 of radius 4cm, circle C2 of radius 7cm and circle C3 of radius 10cm.\nThe centre of the target should be at least 30cm above the ground.\nThe target must be vertical.\nThe arrow need not stick to the target but it must form an impression where it hits. \nDo not use sharp darts or arrows.\n\nBONUS MODULE (OPTIONAL):-\t\t\t
+\nCreate a M track\nA ball or a car must move in the track\nThe track must be clearly visible\nDecorating the track is encouraged\nBonus module will carry 40 points "
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

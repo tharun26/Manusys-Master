@@ -227,6 +227,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:text="Manusys'15"
             android:textColor="#ff000000"
             android:textSize="17sp"

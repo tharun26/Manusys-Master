@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/event4_contact1"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/contacts1"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

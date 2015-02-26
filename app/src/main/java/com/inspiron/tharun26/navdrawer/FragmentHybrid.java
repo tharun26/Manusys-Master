@@ -29,10 +29,26 @@ public class FragmentHybrid extends Fragment{
             public void onClick(View v) {
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:9677109794"));
+                intent.setData(Uri.parse("tel: 9489588712"));
                 startActivity(intent);
 
 
+            }
+        });
+
+        ImageButton gmail=(ImageButton)getActivity().findViewById(R.id.hybridmail);
+        gmail.setOnClickListener(new ImageView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent gmail = new Intent(Intent.ACTION_VIEW);
+                gmail.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                gmail.putExtra(Intent.EXTRA_EMAIL, new String[]{"hybridvehicle15@gmail.com"});
+                //gmail.setData(Uri.parse("tharun26@gmail.com"));
+                gmail.putExtra(Intent.EXTRA_SUBJECT, "Query");
+                gmail.setType("plain/text");
+                gmail.putExtra(Intent.EXTRA_TEXT, "Hi,");
+                startActivity(gmail);
             }
         });
     }

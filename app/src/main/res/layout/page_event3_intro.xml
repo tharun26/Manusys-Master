@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/innovate"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -51,10 +51,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="Creativity is not the finding of a thing, but the making of something out of it after it is found.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t— James Russell Lowell\n\nWhen all think alike, then no one is thinking
+
+        Do you think you are a bit different from others? When everyone is saying blue do you say yellow? Then Innovate is just the event for you. Wake up the sleeping giant in you.  Put your creativeness to the test at MANUSYS’15."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 

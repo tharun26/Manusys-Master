@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/words"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -51,10 +51,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="Words can inspire. Words can destroy. Choose yours well.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-Robin Sharma\nDo you feel the need to step up and take the mantle while your friends are stumbling around? “Word Warriors” provides you with the perfect platform to take things to the next level. Come join us at Manusys’15 and prove you have what it takes to be the best in business."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 

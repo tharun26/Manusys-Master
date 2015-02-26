@@ -21,7 +21,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/ceg"
+                    android:src="@drawable/bluebot"
                     android:id="@+id/imageView3" />
 
             </RelativeLayout>
@@ -49,11 +49,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/about3"
                 android:layout_below="@+id/engine2"
-                android:paddingLeft="15dp"
+                android:paddingLeft="5dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:paddingRight="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/home_background_selector">
 
@@ -61,7 +61,45 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/engine"
+                    android:text="Introduction:
+ \n“Every once in a while a revolutionary product comes along that changes everything. It’s very fortunate if you can work on just one of these in your career.”\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t – Steve Jobs
+\nImagine that you are relaxing on your couch watching your favourite show, suddenly you have the urge to get a drink from the fridge and your pet robot gets it for you. Wishful thinking right? Not anymore!!!
+\nManusys’ 15 in association with Robosapiens presents to you a workshop that can make such dreams a reality.
+\nBluetooth Robotics Workshop teaches how a HC-05 / HC-06 based Bluetooth Controlled Robot works in heeding commands sent from Android based Smart Phone using a Developed Android Application and Bluetooth Technology. This workshop helps participants to understand the designing concepts and use of microcontrollers, serial communication and microcontroller programming in Embedded 'C' language.
+\n\nSessions:
+\nDay 1 (Session 1)
+\n1.Introduction to Robotics
+\n2.Introduction to Microcontrollers
+Day 1 (Session 2)
+\n1.Introduction to Programming Languages
+\n2.Introduction to Wireless System
+\n3.Introduction to Serial Communication
+\n4.Discussion on Different Algorithms
+\n5.Installation of Software and Debugging
+\nDay 2 (Session 3)
+\n1.Assembling the DIY kit of Robosapiens iBOT Mini V3.0
+\n2.Generating different LED Patterns using Robosapiens iBOT Mini V3.0
+\n3.Development of Line Following Robot using Robosapiens iBOT Mini V3.0
+\n4.Development of Bluetooth Controlled Robot using HC-05 / HC-06  Robosapiens iBOT Mini V3.0
+\nDay 2 (Session 4)
+\nCompetition
+\n\nRules:
+\n\nEligibility:
+\nStudents having a valid ID card from recognized educational institutions are eligible for the workshop.
+\n\nType of participation:
+\nEach team can consist of a maximum of 4-5 members. Participants from different colleges may also form a team. Individual participants will be paired up with other teams as required.
+\n\nPayment details:
+\nFee for this workshop is INR 1450/- per person. The details of the payment will be mailed to the participants who have been shortlisted.
+\n\nPre-requisites:
+\nThis is a basic level workshop where everything will be taught from the scratch. Interest in robotics and basic knowledge in electronics and mechanics are sufficient.
+\n\nRequirements:
+\nEach team must bring a laptop with Windows 7 operating system and an android based smart phone.
+\n\nCertificate criteria:
+\nCertificates will be provided to the participants only if he/she attends all the sessions. Failing to do so, the participant's registration will stand cancelled and he/she will also have to forfeit the registration fee. Each participant will receive two certificates one from Anna university and another from Robosapiens.
+\n\nKit:
+\nEach team can get a kit absolutely free of cost
+\n\nFor accommodations please visit accommodation tab. Participants should take care of their food on their own.
+\nFor recent updates and information check our website and your e-mail."
                     android:textColor="#ff000000"
                     android:textSize="15dp"
                     android:paddingLeft="15dp"
@@ -100,7 +138,7 @@
                     android:paddingTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mr.Gokul  8056097997"
+                    android:text="Sudar-8939303260"
                     android:paddingLeft="15dp"
                     android:textColor="#ff000000"
                     android:textSize="17sp"
@@ -120,8 +158,17 @@
                     android:layout_marginEnd="56dp"
                     android:paddingBottom="5dp"/>
 
-
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmail"
+                    android:background="@null"
+                    android:id="@+id/bluebotmail"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true" />
             </RelativeLayout>
+>
 
 
             <TextView

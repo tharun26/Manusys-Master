@@ -21,7 +21,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/ceg"
+                    android:src="@drawable/robotics"
                     android:id="@+id/imageView3" />
 
             </RelativeLayout>
@@ -61,7 +61,28 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/engine"
+                    android:text="Ever wondered how a robot the size of a HUMMER handles components smaller than a Ping-Pong ball with the gentleness of a mother caring for her new-born child? Ever wanted to build one of your own?
+\nManusys’15 in association with TESPA India brings to you a workshop aimed at Robotics hobbyists and students who wish to learn art of building sophisticated industry grade robots.  The workshop covers essential concepts that go into building a successful robot.
+\n
+\nCONCEPTS TAUGHT:
+\n#CONCEPTS OF A ROBOT
+\n#DEFINITION OF ROBOT
+\n#PRINCIPLES OF MEASUREMENT
+\n#HUMAN ANALOGY
+\n#BASIC ELECTRONICS INVOLED
+\n#COMMUNICATION
+\n#SENSING
+\n
+\nRULES AND REGULATIONS
+\n•	Eligibility-all college students are welcome; a valid Manusys id is a must
+\n•	Individual participation only
+\nCertificates will be provided to the participants only if he/she attends all the sessions. Failing to do so, the participant's registration will stand cancelled and he/she will also have to forfeit the registration fee.
+\nFor accommodations please visit accommodation tab. Participants should take care of their food on their own.
+\nFor recent updates and information check our website and your e-mail.
+\n\nWORKSHOP DATE:
+\n18th march 2015
+\n\nWORKSHOP FEE:
+\nWorkshop fee is Rs 500/- . Fee once paid are not refundable under any circumstances."
                     android:textColor="#ff000000"
                     android:textSize="15dp"
                     android:paddingLeft="15dp"
@@ -100,7 +121,7 @@
                     android:paddingTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mr.Gokul  8056097997"
+                    android:text="Rajkumar-7598346156"
                     android:paddingLeft="15dp"
                     android:textColor="#ff000000"
                     android:textSize="17sp"
@@ -121,6 +142,16 @@
                     android:layout_marginEnd="56dp"
                     android:paddingBottom="5dp"/>
 
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmail"
+                    android:background="@null"
+                    android:id="@+id/roboticsmail"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true" />
 
             </RelativeLayout>
 

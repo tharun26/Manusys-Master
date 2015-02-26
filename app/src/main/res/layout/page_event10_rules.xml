@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:id="@+id/imageView"
-        android:src="@drawable/bamboo"
+        android:src="@drawable/rules"
         android:padding="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -32,7 +32,10 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_10">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -51,13 +54,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="Round 1(Prelims):
+\nIt will be a written round which will test your logical, analytical, lateral and creative thinking skills.
+Round 2:
+\nIt will be an impromptu round the format of which will be revealed to you when you get there.
+\nRULES
+\n1.Each team must have a maximum of three participants.  
+\n2.The participants need not necessarily be from the same institution/college.
+\n3.All students must have a valid Manusys ID to participate*.  
+\n4.No contestant can be a member of more than one team.  
+\n5.The participants are not allowed to bring any additional material.  
+\n6.Teams involved in any kind of malpractice will be immediately disqualified.
+\n7.Decisions taken by the administrators will be final and binding.
+\n* - Manusys IDs will be provided during registration. In order to obtain a Manusys ID the college ID card will be required."
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

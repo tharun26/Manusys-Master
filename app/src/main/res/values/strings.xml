@@ -8,17 +8,17 @@
 
     <!-- Event Items -->
     <string-array name="events">
-        <item>Secrets</item>
-        <item>Photo Competition</item>
-        <item>Robo Wars</item>
-        <item>Car Race</item>
-        <item>Auto Show</item>
-        <item>Secrets</item>
-        <item>Photo Competition</item>
-        <item>Robo Wars</item>
-        <item>Car Race</item>
-        <item>Auto Show</item>
-        <item>Secrets</item>
+        <item>CAD Modelling</item>
+        <item>Contraptions</item>
+        <item>Innovate</item>
+        <item>Robo Soccer</item>
+        <item>Line Tracer</item>
+        <item>Rumble Race</item>
+        <item>General Quiz</item>
+        <item>SOLD!!!</item>
+        <item>Grab Your Mike</item>
+        <item>Word Warriors</item>
+        <item>Online Photography</item>
         <item>Photo Competition</item>
         <item>Robo Wars</item>
         <item>Car Race</item>
@@ -26,17 +26,17 @@
     </string-array>
 
     <array name="events_images">
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
-        <item>@drawable/bamboo</item>
+        <item>@drawable/cad</item>
+        <item>@drawable/rover</item>
+        <item>@drawable/innovate</item>
+        <item>@drawable/robosoccer</item>
+        <item>@drawable/line</item>
+        <item>@drawable/rumble</item>
+        <item>@drawable/quiz</item>
+        <item>@drawable/sold</item>
+        <item>@drawable/mike</item>
+        <item>@drawable/words</item>
+        <item>@drawable/camera</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
@@ -52,9 +52,17 @@
     </string-array>
 
     <array name="events_info_images">
+        <item>@drawable/cad</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
+        <item>@drawable/bamboo</item>
+    </array>
+
+    <array name="events_intro">
+        <item>@drawable/cad</item>
+        <item>@drawable/ceg</item>
+        <item>@drawable/chrome</item>
         <item>@drawable/bamboo</item>
         <item>@drawable/bamboo</item>
     </array>
@@ -64,7 +72,7 @@
     <string name="title3">Anna University</string>
     <string name="title4">Workshops</string>
     <string name="title_activity_workshops">workshops</string>
-    <string name="title_activity_event1">Event1</string>
+
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Push Notifications</string>
@@ -86,16 +94,17 @@
     <string name="options_clear">Clear</string>
     <string name="options_exit">Exit</string>
     <string name="title_activity_about">About</string>
-    <string name="title_activity_event2">Event2</string>
-    <string name="title_activity_event3">Event3</string>
-    <string name="title_activity_event4">Event4</string>
-    <string name="title_activity_event5">Event5</string>
-    <string name="title_activity_event6">Event6</string>
-    <string name="title_activity_event7">Event7</string>
-    <string name="title_activity_event8">Event8</string>
-    <string name="title_activity_event9">Event9</string>
-    <string name="title_activity_event10">Event10</string>
-    <string name="title_activity_event11">Event11</string>
+    <string name="title_activity_event1">CAD Modelling</string>
+    <string name="title_activity_event2">Contraptions</string>
+    <string name="title_activity_event3">Innovate</string>
+    <string name="title_activity_event4">Robo Soccer</string>
+    <string name="title_activity_event5">Line Tracer</string>
+    <string name="title_activity_event6">Rumble Race</string>
+    <string name="title_activity_event7">General Quiz</string>
+    <string name="title_activity_event8">SOLD !!!</string>
+    <string name="title_activity_event9">Grab Your Mike</string>
+    <string name="title_activity_event10">Word Warriors</string>
+    <string name="title_activity_event11">Online Photography</string>
 
 
     <string name="hybrid">INTRODUCTION:
