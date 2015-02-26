@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the fragment  to be displayed for a section associated with a tab -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engine">
+
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/ceg"
+                    android:id="@+id/imageView3" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engine2"
+                android:layout_below="@+id/engine"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_background_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What's this?"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about3"
+                android:layout_below="@+id/engine2"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/home_background_selector">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engine"
+                    android:textColor="#ff000000"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="italic"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engine6"
+                android:layout_below="@+id/about3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_background_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@id/engine6"
+                android:background="@drawable/home_background_selector"
+                >
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr.Gokul  8056097997"
+                    android:paddingLeft="15dp"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/hybridcall"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"
+                    android:background="@null"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="56dp"
+                    android:layout_marginEnd="56dp"
+                    android:paddingBottom="5dp"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/about_title"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

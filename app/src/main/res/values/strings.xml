@@ -59,10 +59,10 @@
         <item>@drawable/bamboo</item>
     </array>
 
-    <string name="title1">God of War Ascension</string>
-    <string name="title2">Assassin\'s Creed III</string>
-    <string name="title3">Hitman Absolution</string>
-    <string name="title4">Dishonored</string>
+    <string name="title1">Bamboo</string>
+    <string name="title2">Gears </string>
+    <string name="title3">Anna University</string>
+    <string name="title4">Workshops</string>
     <string name="title_activity_workshops">workshops</string>
     <string name="title_activity_event1">Event1</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
@@ -97,4 +97,19 @@
     <string name="title_activity_event10">Event10</string>
     <string name="title_activity_event11">Event11</string>
 
+
+    <string name="hybrid">INTRODUCTION:
+
+"The automobile engine will come, and then I will consider my life's work complete"
+                           – Rudolf Diesel
+
+      Interested to know the working of an engine, the heart of every automobile in the world?
+
+      Fascinated by the parts that make up the whole?
+
+             Then this is the workshop for you! This one day workshop organised by Manusys’15 in association with Simpson and Company Ltd. will not only teach you the making and working of an engine but it also gives you the opportunity of seeing one come to life.
+
+Register yourself to Enroll in the workshops!!!</string>
+
+    <string name="engine">"The automobile engine will come, and then I will consider my life's work complete"– Rudolf Diesel Interested to know the working of an engine, the heart of every automobile in the world? Fascinated by the parts that make up the whole? Then this is the workshop for you! This one day workshop organised by Manusys’15 in association with Simpson and Company Ltd. will not only teach you the making and working of an engine but it also gives you the opportunity of seeing one come to life. Register yourself to Enroll in the workshops!!!</string>
 </resources>

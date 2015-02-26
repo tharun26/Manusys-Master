@@ -8,8 +8,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by tharun26 on 9/2/15.
  */
 public class WorkshopFragmentPageAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3" };
+    final int PAGE_COUNT = 4;
+    private String tabTitles[] = new String[] { "Engine", "BLUEBOT", "HYBRID","INDUSTRIAL ROBOTICS" };
 
     public WorkshopFragmentPageAdapter(FragmentManager fm) {
         super(fm);
@@ -22,7 +22,17 @@ public class WorkshopFragmentPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return FragmentWorkshop1.newInstance(position + 1);
+
+        if(position==0)
+            return FragmentEngine.newInstance(position);
+        else if(position==1)
+            return FragmentBluebot.newInstance(position);
+        else if(position==2)
+            return FragmentHybrid.newInstance(position);
+        else if(position==3)
+            return FragmentRobotics.newInstance(position);
+
+        return null;
     }
 
     @Override

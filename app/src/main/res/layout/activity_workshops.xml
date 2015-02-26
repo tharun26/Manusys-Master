@@ -4,26 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.flaviofaria.kenburnsview.KenBurnsView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/bamboo"/>
+
 
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         app:pstsShouldExpand="true"
         app:pstsTextAllCaps="true"
+
         android:layout_width="match_parent"
         android:layout_height="48dp"
-
+        app:pstsScrollOffset="15dp"
         app:pstsIndicatorColor="@color/blue"
 
-        app:pstsTabPaddingLeftRight="14dp"
+
         app:pstsIndicatorHeight="2dp"
         app:pstsUnderlineHeight="1dp"
 
         >
     </com.astuetz.PagerSlidingTabStrip>
+
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

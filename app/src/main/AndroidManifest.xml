@@ -50,7 +50,8 @@
         </activity>
         <activity
             android:name=".Event1"
-            android:label="@string/title_activity_event1" >
+            android:label="@string/title_activity_event1"
+           >
         </activity>
         <activity
             android:name=".SplashScreen"
