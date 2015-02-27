@@ -23,7 +23,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/developer"
+            android:src="@drawable/acco"
             android:id="@+id/imageView3" />
 
     </RelativeLayout>

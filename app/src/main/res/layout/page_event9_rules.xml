@@ -51,10 +51,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="Coming Soon..."
             android:textColor="#fffeffed"
             android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            />
     </LinearLayout>
 
 

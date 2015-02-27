@@ -97,8 +97,8 @@ public class FragmentContacts extends Fragment{
         public MyAdapter(Context context) {
             inflater = LayoutInflater.from(context);
 
-            items.add(new Item("Indarajith J.S", R.drawable.default_male,"General Secretary"));
-            items.add(new Item("Athithyan K", R.drawable.default_male,"Public Relations"));
+            items.add(new Item("Indarajith J.S", R.drawable.gensec1,"General Secretary"));
+            items.add(new Item("Athithyan K", R.drawable.pub1,"Public Relations"));
             items.add(new Item("Karupasamy S", R.drawable.jointsec,"Joint Secretary"));
 
             /*items.add(new Item("Image 4", R.drawable.default_male,"Presi"));

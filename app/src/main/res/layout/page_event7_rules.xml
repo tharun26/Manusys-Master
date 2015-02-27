@@ -51,7 +51,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="
+\n1. Each team can consist of a maximum of three members.
+\n2. Each participant should have a Manusys ID.
+\n3. Quiz master’s decision is final.
+"
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />

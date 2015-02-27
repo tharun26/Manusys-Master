@@ -51,12 +51,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tag Auditorium ,CEG"
+            android:text="Dept. of Manufacturing Engineering, CEG,Anna University"
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp"
             android:gravity="center"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:layout_toLeftOf="@+id/venue_event7"
+            android:layout_toStartOf="@+id/venue_event7" />
 
         <ImageView
             android:layout_width="wrap_content"

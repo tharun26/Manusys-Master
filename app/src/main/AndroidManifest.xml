@@ -30,8 +30,10 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:icon,android:theme"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_logo_m"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >

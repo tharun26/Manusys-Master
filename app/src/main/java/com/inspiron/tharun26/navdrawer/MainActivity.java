@@ -316,7 +316,7 @@ public class MainActivity extends MaterialNavigationDrawer {
 
 
 
-        this.addSection( newSection("Accommodation",R.drawable.ic_hotel_grey600_24dp,new FragmentSponsors()).setSectionColor(Color.parseColor("#9c27b0")));
+        this.addSection( newSection("Accommodation",R.drawable.ic_hotel_grey600_24dp,new FragmentSponsors()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Sponsors",R.drawable.sponsors,new FragmentAccomodation()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Contacts",R.drawable.contacts,new FragmentContacts()).setSectionColor(Color.parseColor("#03a9f4")));
         this.addSection(newSection("Updates",R.drawable.updates ,new NotificationFragment()).setSectionColor(Color.parseColor("#008744")));
