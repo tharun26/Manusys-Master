@@ -39,19 +39,19 @@ public class FragmentContacts extends Fragment{
                 // this 'mActivity' parameter is Activity object, you can send the current activity.
                 if(position==0) {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:96771097994"));
+                    intent.setData(Uri.parse("tel:9003833066"));
                     startActivity(intent);
                 }
                 else if(position==1)
                 {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:96771097994"));
+                    intent.setData(Uri.parse("tel:9952011991"));
                     startActivity(intent);
                 }
                 else if(position==2)
                 {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:96771097994"));
+                    intent.setData(Uri.parse("tel:9894317232"));
                     startActivity(intent);
                 }
                 else if(position==3)
@@ -97,15 +97,17 @@ public class FragmentContacts extends Fragment{
         public MyAdapter(Context context) {
             inflater = LayoutInflater.from(context);
 
-            items.add(new Item("Image 1", R.drawable.default_male,"President"));
-            items.add(new Item("Image 2", R.drawable.default_male,"Chairman"));
-            items.add(new Item("Image 3", R.drawable.defaultfemale,"Chairman"));
-            items.add(new Item("Image 4", R.drawable.default_male,"President"));
+            items.add(new Item("Indarajith J.S", R.drawable.default_male,"General Secretary"));
+            items.add(new Item("Athithyan K", R.drawable.default_male,"Public Relations"));
+            items.add(new Item("Karupasamy S", R.drawable.jointsec,"Joint Secretary"));
+
+            /*items.add(new Item("Image 4", R.drawable.default_male,"Presi"));
             items.add(new Item("Image 5", R.drawable.default_male,"Chairman"));
             items.add(new Item("Image 3", R.drawable.defaultfemale,"Chairman"));
             items.add(new Item("Image 4", R.drawable.default_male,"President"));
             items.add(new Item("Image 3", R.drawable.defaultfemale,"Chairman"));
             items.add(new Item("Image 4", R.drawable.default_male,"President"));
+            */
         //    items.add(new Item("Image 3", R.drawable.tree1));
          //   items.add(new Item("Image 4", R.drawable.nature3));
           //  items.add(new Item("Image 5", R.drawable.tree2));

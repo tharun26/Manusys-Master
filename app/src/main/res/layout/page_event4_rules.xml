@@ -32,6 +32,11 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_4">
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -51,13 +56,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="1.Each team may consist of 2 to 5 members.
+\n2.No manual intervention is allowed at any point during the game.
+\n3.A team’s second foul will result in disqualification.
+\n\nFouls:
+\n1.Removing a cube an opponent had already placed in your goal
+\n2.Going out of the arena by yourself (to avoid clash with opponent, etc.). However, if your opponent pushes you out of the arena, it will not be considered as a foul by either team
+\n3.Pushing a cube out of the arena
+\n\nCriteria for judgment:
+\nSelection of finalists and winners will be based on overall number of goals scored by each team. In other words, scoring higher number of goals than your opponent in the preliminary round does not guarantee entry into finals. All decisions made by organizers will be treated as final."
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

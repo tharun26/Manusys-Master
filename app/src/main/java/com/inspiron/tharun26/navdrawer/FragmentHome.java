@@ -24,6 +24,8 @@ import android.widget.ViewSwitcher;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.flaviofaria.kenburnsview.Transition;
+import com.romainpiel.shimmer.Shimmer;
+import com.romainpiel.shimmer.ShimmerTextView;
 
 import java.util.ArrayList;
 
@@ -71,10 +73,36 @@ public class FragmentHome extends Fragment {
             imageGallery.addView(image);
         }
 */
-        mData.add(new GameEntity(R.drawable.bamboo, R.string.title1));
-        mData.add(new GameEntity(R.drawable.manufacturing, R.string.title2));
-        mData.add(new GameEntity(R.drawable.ceg, R.string.title3));
-        mData.add(new GameEntity(R.drawable.cover, R.string.title4));
+        ShimmerTextView tv;
+        Shimmer shimmer;
+        tv = (ShimmerTextView) getActivity().findViewById(R.id.shim1);
+        shimmer = new Shimmer();
+        shimmer.setDuration(2000);
+        shimmer.start(tv);
+
+        ShimmerTextView tv1;
+        Shimmer shimmer1;
+        tv1 = (ShimmerTextView) getActivity().findViewById(R.id.shim2);
+        shimmer1 = new Shimmer();
+        shimmer1.setDuration(2000).setDirection(Shimmer.ANIMATION_DIRECTION_RTL).setStartDelay(5000);
+        shimmer1.start(tv1);
+
+        ShimmerTextView tv2;
+        Shimmer shimmer2;
+        tv2 = (ShimmerTextView) getActivity().findViewById(R.id.shim3);
+        shimmer2 = new Shimmer();
+        shimmer2.setDuration(2000);
+        shimmer2.start(tv2);
+
+
+
+        mData.add(new GameEntity(R.drawable.ceg, R.string.title1));
+        mData.add(new GameEntity(R.drawable.dept, R.string.title2));
+        mData.add(new GameEntity(R.drawable.flower, R.string.title3));
+        mData.add(new GameEntity(R.drawable.crowd1, R.string.title4));
+        mData.add(new GameEntity(R.drawable.nitrocar, R.string.title4));
+        mData.add(new GameEntity(R.drawable.rumblerace, R.string.title4));
+        mData.add(new GameEntity(R.drawable.crowd2, R.string.title4));
 
         mTitle = (TextSwitcher) getActivity().findViewById(R.id.title);
         mTitle.setFactory(new ViewSwitcher.ViewFactory() {
@@ -98,9 +126,9 @@ public class FragmentHome extends Fragment {
         mCoverFlow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity(),
-                        getResources().getString(mData.get(position).titleResId),
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),
+                  //      getResources().getString(mData.get(position).titleResId),
+                   //     Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -32,7 +32,10 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_6">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -51,12 +54,34 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="Is it your life’s ambition to, plunge your car into the slush pit and drive out over the dusty dunes. Think your car can handle the worst maintained road in the world. Well it doesn’t matter as long as your bot is able to do all the above. Association of Manufacturing Engineers brings to you “Rumble Race”, the flagship robotic event, only at Manusys ’15.
+
+\n\nTECHNICAL SPECIFICATIONS:
+\n1. The robot dimensions should not exceed 25cm*25cm (l*b) during the course of its run.
+
+\n2. The robot should be manually controlled using either wired or wireless device operated by a team member.
+
+\n3. The robot can be powered on-board or off-board.
+
+\n4.  Participants will have to bring for other requirements themselves (like extension cords).
+
+\n5.  The potential difference between any two electrical points on the robot must not exceed 12 volts throughout the run and amperage of not more than 2 Amps throughout the run.
+
+\n6. The length of wires used for power supply and for controlling the robot (if any) should be sufficient.
+
+\n7.  For wireless communication, it is recommended to keep two frequencies for communication, so that there is no case of electromagnetic interference with another team's wireless communication.
+
+\n8.  The ORGANISER will not be responsible for any kind of electromagnetic interference in wireless communication.
+
+\n9.  The robot cannot be constructed out of readymade kits available in the market.
+
+\n10. The robots should not be disassembled until the results are declared."
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />
     </LinearLayout>
 
+    </ScrollView>
 
 
 

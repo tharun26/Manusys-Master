@@ -298,7 +298,7 @@ public class MainActivity extends MaterialNavigationDrawer {
     public void init(Bundle bundle) {
 
         // add accounts
-        MaterialAccount account = new MaterialAccount(this.getResources(),"Manusys","CEG,Manufacturing Department", R.drawable.manusys_logo_bw, R.drawable.cover);
+        MaterialAccount account = new MaterialAccount(this.getResources(),"Manusys15","CEG,Manufacturing Department", R.drawable.manusys_logo_bw, R.drawable.cover);
         this.addAccount(account);
 
         //MaterialAccount account2 = new MaterialAccount(this.getResources(),"Hatsune Miky","hatsune.miku@example.com",R.drawable.photo2,R.drawable.mat2);
@@ -308,7 +308,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         //this.addAccount(account3);
 
         // create sections
-        this.addSection(newSection("Home",R.drawable.home ,new FragmentHome()).setSectionColor(Color.parseColor("#008744")));
+        this.addSection(newSection("Home",R.drawable.home ,new FragmentHome()).setSectionColor(Color.parseColor("#3a86ff")));
         //Green:#008744"
         this.addSection(newSection("Events",R.drawable.events,new FragmentIndex()).setSectionColor(Color.parseColor("#03a9f4")));
       //  this.addSection(newSection("Workshops",R.drawable.workshops,new FragmentIndex()).setSectionColor(Color.parseColor("#9c27b0")));
@@ -324,7 +324,7 @@ public class MainActivity extends MaterialNavigationDrawer {
         this.addSection(newSection("About",R.drawable.about,new Intent(this,about.class)).setSectionColor(Color.parseColor("#008744")));
 
         // create bottom section
-        this.addBottomSection(newSection("Bottom Section",R.drawable.ic_settings_black_24dp,new Intent(this,Settings.class)));
+      //  this.addBottomSection(newSection("Bottom Section",R.drawable.ic_settings_black_24dp,new Intent(this,Settings.class)));
 
 
     }

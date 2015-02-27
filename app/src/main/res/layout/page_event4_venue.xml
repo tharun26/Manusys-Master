@@ -56,7 +56,9 @@
             android:textStyle="italic"
             android:textSize="15sp"
             android:gravity="center"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:layout_toLeftOf="@+id/venue_event4"
+            android:layout_toStartOf="@+id/venue_event4" />
 
         <ImageView
             android:layout_width="wrap_content"

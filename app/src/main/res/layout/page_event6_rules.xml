@@ -32,7 +32,10 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_event_6">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -51,13 +54,50 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. add onions. stir and saute for 10-15 seconds \n2. add all the finely chopped vegetables\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables.\n1. add onions. stir and saute for 10-15 seconds.\n2. add all the finely chopped vegetables."
+            android:text="1. A team may consist of a maximum of 4 members.
+\n2. A team may comprise of members from different colleges.
+\n3. An individual cannot be a member of more than one team.
+\n4.  Participants must bring their COLLEGE I.D CARD.
+\n4. Participants should not share their robot with other teams.
+\n5 .Trial runs are not allowed before the event start, if people take a trial run, they may be disqualified.
+
+\nThe event organisers reserve the right to make modifications to any of rules if deemed necessary and their decision in any situation is final and binding on all.
+
+\n\nNegative points:
+\n1. Participants can use two manual touches without points deduction, after which for each manual touch 10 points will be reduced.
+\n2. For each line crossing 5 points will be reduced.
+
+\n\nSCORING PATTERN:
+\nThe scores for the successful completion of each terrain will be revealed only on the day of the event.
+
+\n\nArena Specification –
+\nALL TERRAINS IN ORDER:
+\nLAND
+\nPEBBLES WITH MARBLES
+\nSMALL SLOPE
+\nSPEED BREAKERS
+\nONE SIDE SLOPE
+\nSPEED BREAKERS
+\nBIG SLOPE
+\nPEBBLES WITH MARBLES
+\nMAZES (PLACING IN 30cm GAP)
+\nBRICKS (PLACING IN 15cm GAP)
+\nSPEED BREAKERS
+\nSLOPE
+\nROPE BRIDGE
+\nSLOPE
+\nNAIL BED
+\nLAND
+\nMAZES (PLACING IN 30cm GAP)
+
+\n\nDIMENSIONS:
+\nALL TERRAIN WIDTH IS 30cm, TOLERANCE 5cm ONLY ON BENDS."
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

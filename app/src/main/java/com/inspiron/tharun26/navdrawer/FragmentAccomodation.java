@@ -43,9 +43,15 @@ public class FragmentAccomodation extends Fragment{
         public MyAdapter1(Context context) {
             inflater = LayoutInflater.from(context);
 
-            items1.add(new Item1("Image 1", R.drawable.default_male));
-            items1.add(new Item1("Image 2", R.drawable.default_male));
-            items1.add(new Item1("Image 3", R.drawable.defaultfemale));
+            items1.add(new Item1("Simpsons & Co Ltd.", R.drawable.simpson));
+            items1.add(new Item1("Tespa India", R.drawable.tespa));
+            items1.add(new Item1("Uniq Technologies", R.drawable.uniq));
+            items1.add(new Item1("T.I.M.E", R.drawable.time));
+            items1.add(new Item1("Vani", R.drawable.vani));
+            items1.add(new Item1("LS Mills", R.drawable.ls));
+            items1.add(new Item1("Professonal Courier", R.drawable.professional));
+       //     items1.add(new Item1("Tespa India", R.drawable.tespa));
+        //    items1.add(new Item1("Uniq Technologies", R.drawable.uniq));
             /*items.add(new Item("Image 4", R.drawable.default_male,"President"));
             items.add(new Item("Image 5", R.drawable.default_male,"Chairman"));
             items.add(new Item("Image 3", R.drawable.defaultfemale,"Chairman"));

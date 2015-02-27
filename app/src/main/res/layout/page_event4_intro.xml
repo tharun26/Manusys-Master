@@ -33,6 +33,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_event_4">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -51,13 +55,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is the sample para:This Android tutorial is to show case how to build an Android activity with card style list view. This is to help achieve a specific styling. This card style is being popularly used to display list style items. We have already seen about creating an Android ListView with custom layout. Code is same as this tutorial and the only difference is the background style."
+            android:text="This time we are keeping it simple. All you need to do is create a manual robot (wheeled or non-wheeled) capable of taking cubes to a specified destination (goal). Of course something so simple is not worthy enough of an event like Manusys ’15. So read on to find out the restrictions we are placing on you.
+\n\nRobot specifications:
+\nThe robot should initially fit into a box of dimensions 25 cm x 25 cm x 25 cm. The dimensions of the robot are allowed to change during the game.
+\nThe potential difference between any two points should be no greater than 12 V.
+\nThe robot may be wired or wireless. In case of wired robot, please ensure sufficient length of wire so as to avoid wires getting taut.
+\n\nGameplay:
+\nTwo teams compete in each round, each team is in control of one manual soccer playing robot. The objective is to place as many cubes as possible into the opponent’s goal area.
+\nThe game will be conducted in two rounds as follows:
+\nPreliminary round: Each match will have a duration of 3 minutes. Initially, 10 balls will be present in the arena. As balls are placed into goals, balls will be added to the arena such that there are at least 5 balls available in-play at all times.
+\nFinal round:
+\nDuration of finals is 10 minutes. Only 10 balls will be present in the arena and these will not be replenished as goals are scored. The game ends when all 10 balls are depleted, or when time runs out, whichever event occurs earlier.
+\n\nArena specifications:
+\nThe arena consists of a flex sheet of dimensions 3.5 m x 2 m. Goals will be positioned on the two ends of the arena as shown. The goals will be in the form of marked out areas on the arena.
+\nThe cubes will be of dimensions 10 cm x 10 cm x 10 cm and will be randomly placed within the arena."
             android:textColor="#fffeffed"
             android:textStyle="italic"
             android:textSize="15sp" />
     </LinearLayout>
 
-
+</ScrollView>
 
 
 </RelativeLayout>

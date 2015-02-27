@@ -67,10 +67,10 @@
         <item>@drawable/bamboo</item>
     </array>
 
-    <string name="title1">Bamboo</string>
-    <string name="title2">Gears </string>
-    <string name="title3">Anna University</string>
-    <string name="title4">Workshops</string>
+    <string name="title1"></string>
+    <string name="title2"></string>
+    <string name="title3"></string>
+    <string name="title4"></string>
     <string name="title_activity_workshops">workshops</string>
 
     <string name="title_activity_splash_screen">SplashScreen</string>

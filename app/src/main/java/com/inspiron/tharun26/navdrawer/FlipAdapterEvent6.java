@@ -185,7 +185,7 @@ public class FlipAdapterEvent6 extends BaseAdapter implements ImageView.OnClickL
                 break;
             case R.id.contact1_event_6:
                 Intent intent1 = new Intent(Intent.ACTION_DIAL);
-                intent1.setData(Uri.parse("tel:96771097994"));
+                intent1.setData(Uri.parse("tel:8939489499"));
                 context.startActivity(intent1);
                 break;
 

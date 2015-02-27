@@ -12,7 +12,9 @@
 
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_home"
+    >
 
     <RelativeLayout
         android:id="@+id/home1"
@@ -31,7 +33,7 @@
         coverflow:rotationThreshold="0.5"
         coverflow:scalingThreshold="0.5"
         coverflow:spacing="0.4"
-        android:background="@drawable/home_background"/>
+       />
 
     <TextSwitcher
         android:id="@+id/title"
@@ -51,7 +53,9 @@
         android:id="@+id/home2"
         android:layout_below="@+id/home1"
         android:layout_marginLeft="15dp"
-        android:background="@drawable/home_background_selector">
+        android:background="@null"
+
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +63,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:paddingBottom="3dp"
-            android:textColor="#ff000000"
+            android:textColor="#ffffffff"
             android:textSize="17sp"
 
             android:textStyle="bold"
@@ -77,7 +81,9 @@
         android:paddingRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/home_background_selector">
+        android:background="@drawable/contact_border"
+            android:layout_marginBottom="2dp"
+        >
 
         <ImageView
             android:layout_width="wrap_content"
@@ -96,12 +102,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/imageView">
-            <TextView
+            <com.romainpiel.shimmer.ShimmerTextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/textView"
+                android:text="Engine Workshop With Industrial Visit"
+                android:id="@+id/shim1"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:gravity="center_horizontal"
@@ -111,8 +118,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_toRightOf="@+id/imageView"
                 android:layout_toEndOf="@+id/imageView"
+
                 android:padding="16sp"
-                android:textColor="#ff000000" />
+                android:textColor="#000000" />
         </ScrollView>
     </RelativeLayout>
 
@@ -127,7 +135,8 @@
         android:paddingRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/home_background_selector">
+        android:background="@drawable/contact_border"
+        android:layout_marginBottom="2dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -135,7 +144,7 @@
             android:paddingTop="10dp"
 
             android:id="@+id/imageView1"
-            android:src="@drawable/trending1"
+            android:src="@drawable/trending"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -146,12 +155,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/imageView1">
-            <TextView
+            <com.romainpiel.shimmer.ShimmerTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/textView1"
+                android:text="BlueBot Workshop"
+                android:id="@+id/shim2"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:gravity="center_horizontal"
@@ -162,7 +171,7 @@
                 android:layout_toRightOf="@+id/imageView"
                 android:layout_toEndOf="@+id/imageView"
                 android:padding="16sp"
-                android:textColor="#ff000000" />
+                android:textColor="#000000" />
         </ScrollView>
     </RelativeLayout>
 
@@ -177,7 +186,8 @@
         android:paddingRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/home_background_selector">
+        android:background="@drawable/contact_border"
+        >
 
         <ImageView
             android:layout_width="wrap_content"
@@ -196,12 +206,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/imageView2">
-            <TextView
+            <com.romainpiel.shimmer.ShimmerTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/textView2"
+                android:text="Guest Lecture by-Dr.C.Sylendra Babu"
+                android:id="@+id/shim3"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:gravity="center_horizontal"
@@ -212,7 +223,7 @@
                 android:layout_toRightOf="@+id/imageView"
                 android:layout_toEndOf="@+id/imageView"
                 android:padding="16sp"
-                android:textColor="#ff000000" />
+                android:textColor="#000000" />
         </ScrollView>
     </RelativeLayout>
 
@@ -223,14 +234,14 @@
         android:layout_below="@+id/home5"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/home_background_selector">
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:text="Manusys'15"
-            android:textColor="#ff000000"
+            android:textColor="#ffffffff"
             android:textSize="17sp"
             android:textStyle="bold"
 
@@ -248,7 +259,7 @@
         android:paddingRight="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/home_background_selector">
+        android:background="@drawable/contact_border">
 
 
     <TextView
@@ -256,9 +267,9 @@
         android:layout_height="wrap_content"
 android:text="As the signature event of the Association of Manufacturing Engineers, Manusys marks the confluence of students belonging to various disciplines. It is the annual symposium comprising of three granddays of events, exhibitions, workshops, guest lectures, paper presentations and several other interesting slots in the agenda that provide a unique platform for students to exhibit their talent and creativity.
 "
-        android:textColor="#ff000000"
+        android:textColor="#ffffffff"
         android:textSize="15dp"
-        android:paddingLeft="15dp"
+        android:paddingLeft="1dp"
         android:textStyle="italic"
         />
 </RelativeLayout>

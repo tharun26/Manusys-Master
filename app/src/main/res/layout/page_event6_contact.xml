@@ -30,7 +30,7 @@
         android:textStyle="bold"
         android:layout_gravity="center"
         android:textColor="#fff6f9e8"
-        android:layout_below="@+id/event2_contact1"
+        android:layout_below="@+id/event6_contact1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -52,17 +52,13 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/contact1_event_6"
-            android:src="@drawable/event1_contact"
+            android:src="@drawable/phone"
             app:border_width="2dp"
             app:border_color="#FF000000"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="194dp"
-            android:layout_marginEnd="194dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -71,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Gokul Ravi"
+            android:text="Prashanth"
             android:gravity="center_vertical"
             android:id="@+id/textView6"
             android:layout_marginRight="79dp"
